@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-body * {
+body *, body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -13,6 +13,25 @@ body {
 }
 
 body, .quote, .information, .footer {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.information {
+    text-align: center;
+}
+
+.header, .information-subcontainer {
+    display: flex;
+    align-items: center;
+}
+
+.information-subcontainer {
+    gap: 16px;
+}
+
+.information-item {
+    flex: 1;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -37,4 +56,10 @@ ul.nav-links {
 img {
     display: block;
     width: 300px;
+    border-radius: 16px;
+}
+
+.information .img-container img {
+    border: rgb(22, 22, 110) solid 5px;
+    width: 180px;
 }
