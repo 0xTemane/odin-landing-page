@@ -33,3 +33,8 @@ ul.nav-links {
     background-color: rgb(41, 41, 99);
     color: white;
 }
+
+img {
+    display: block;
+    width: 300px;
+}
