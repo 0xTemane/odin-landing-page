@@ -12,7 +12,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-body, .quote, .information, .footer {
+body, .quote, .information{
     display: flex;
     flex-flow: column nowrap;
 }
@@ -94,7 +94,7 @@ ul.nav-links {
 }
 
 .information {
-    padding: 16px;
+    padding: 64px 32px;
     gap: 32px;
     justify-content: center;
     align-items: center;
@@ -106,11 +106,13 @@ ul.nav-links {
 }
 
 .information-subcontainer {
-    gap: 16px;
+    gap: 24px;
+    flex-flow: row wrap;
+    align-content: center;
 }
 
 .information-item {
-    flex: 1;
+    flex: 0;
     display: flex;
     flex-flow: column nowrap;
     gap: 16px;
@@ -128,4 +130,72 @@ img {
 .information .img-container img {
     border: rgb(22, 22, 110) solid 5px;
     width: 180px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 200;
+}
+
+.quote-author {
+    color: #00000068;
+}
+
+.call-to-action {
+    padding: 64px;
+    background-color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-card {
+    background-color: #3882F6;
+    border-radius: 8px;
+    padding: 16px;
+    color: #F9FAF8;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 8px;
+}
+
+.call-to-action-text {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 2px;
+}
+
+.call-to-action-card-title {
+    font-weight: 600;
+}
+
+.call-to-action-card-subtitle {
+    font-weight: 300;
+}
+
+.call-to-action-btn {
+    border: 2px dashed #F9FAF8;
+    border-radius: 8px;
+    background-color: #3882F6;
+    color: white;
+    font-weight: 800;
+    padding: 8px;
+    align-self: center;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: #E5E7EB;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
 }
