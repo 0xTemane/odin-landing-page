@@ -23,7 +23,86 @@ body, .quote, .information, .footer {
 
 .header, .information-subcontainer {
     display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;align-items: center;
+    background-color: #1f2937;
+    color: #F9FAF8;
+}
+
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+ul.nav-links {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+
+.header {
+    padding: 16px;
+    background-color: #1f2937;
+    color: #F9FAF8;
+    justify-content: space-between;
+}
+
+.header-text {
+    flex: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
     align-items: center;
+    gap: 10px;
+}
+
+.header-text h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 800;
+}
+
+.header-text p {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header-btn {
+    border: none;
+    border-radius: 8px;
+    background-color: #3882F6;
+    color: white;
+    font-weight: 800;
+    padding: 8px;
+    align-self: flex-start;
+}
+
+.hero-img {
+    display: block;
+    align-self: center;
+    flex: 0 0 50vw;
+}
+
+.information {
+    padding: 16px;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.information h2 {
+    font-size: 36px;
+    font-weight: 900;
 }
 
 .information-subcontainer {
@@ -34,28 +113,15 @@ body, .quote, .information, .footer {
     flex: 1;
     display: flex;
     flex-flow: column nowrap;
+    gap: 16px;
 }
 
-a {
-    text-decoration: none;
-}
-
-ul.nav-links {
-    display: flex;
-    gap: 18px;
-    list-style: none;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;align-items: center;
-    background-color: rgb(41, 41, 99);
-    color: white;
+.information-item-text {
+    font-weight: 300;
 }
 
 img {
     display: block;
-    width: 300px;
     border-radius: 16px;
 }
 
